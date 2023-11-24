@@ -1,12 +1,17 @@
 #include<stdio.h>
-int main()
+int main(void)
 {
-    char grade = 'A';
-    int marks = 94;
-    if(grade == 'A')
-    if(marks>95)
-    printf("Excellent");
-    else
-    printf("Work hard for getting a grade");
-    return 0;
+    int cube=0,num,dig,i,sum=0;
+    printf("Enter a number: ");
+    scanf("%d",&num);
+    i=num;
+    while(num>0)
+    {
+      dig = num % 10;
+      cube = dig * dig * dig;
+      sum += cube;
+      num/=10;
+      if(i == sum)
+      printf("Arm strong");
+    }
 }
