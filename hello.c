@@ -1,17 +1,18 @@
 #include<stdio.h>
 int main(void)
 {
-    int cube=0,num,dig,i,sum=0;
-    printf("Enter a number: ");
-    scanf("%d",&num);
-    i=num;
-    while(num>0)
-    {
-      dig = num % 10;
-      cube = dig * dig * dig;
-      sum += cube;
-      num/=10;
-      if(i == sum)
-      printf("Arm strong");
-    }
+  int i=1 , s = 1,sum = 0;
+  while(i<=20)
+  {
+    printf("%d ",s);
+    s=s+3;
+    sum += s;
+    i++;
+  }
+  /*for(i;i<=5;i++)
+  {
+    sum+=i;
+  }*/
+  printf("Sum = %d",sum);
+  return 0;
 }
