@@ -1,18 +1,20 @@
 #include<stdio.h>
 int main(void)
 {
-  int i=1 , s = 1,sum = 0;
-  while(i<=20)
+  int n1=0,n2=1,n;
+  printf("Enter a number: ");
+  scanf("%d",&n);
+  int i=3;
+  while(n2!=n && n2<=n)
   {
-    printf("%d ",s);
-    s=s+3;
-    sum += s;
+    int term = n1;
+    n1 = n2;
+    n2 = term + n1;
     i++;
   }
-  /*for(i;i<=5;i++)
-  {
-    sum+=i;
-  }*/
-  printf("Sum = %d",sum);
+  if(n2 == n)
+  printf("%d Number is fibonacci number",n);
+  else
+  printf("%d Number is not a fibonacci number",n);
   return 0;
 }
