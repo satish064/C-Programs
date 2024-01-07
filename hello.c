@@ -1,6 +1,5 @@
 #include<stdio.h>
-
 int main()
 {
-  properSum(10);
+  int a[2]={1,2,3,4};
 }

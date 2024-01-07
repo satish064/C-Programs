@@ -2,6 +2,14 @@
     "files.associations": {
         "stdio.h": "c",
         "E7_15.C": "cpp",
-        "E7_16.C": "cpp"
+        "E7_16.C": "cpp",
+        "E7_14.C": "cpp",
+        "E7_17.C": "cpp",
+        "E7_18.C": "cpp",
+        "E7_19.C": "cpp",
+        "E7_20.C": "cpp",
+        "E7_21.C": "cpp",
+        "E7_23.C": "cpp",
+        "E7_24.C": "cpp"
     }
 }
