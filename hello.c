@@ -1,22 +1,16 @@
 #include<stdio.h>
-int main()
+int main(void)
 {
-  int a[5][5],row,columns,i,j;
-  printf("Enter the order of the matrix. The order should be less than 5x5:\n");
-  scanf("%d %d",&row,&columns);
-  printf("Enter the elements of the matrix:\n");
+  int arr[6]={20,40,50,60,30};
+  int num=2;
+  int value=90;
 
-  for(i=0;i<row;i++)
-  for(j=0;j<columns;j++)
-  scanf("%d",&a[i][j]);
+  for(int i=6-2;i>=num;i--)
+  arr[i+1]=arr[i];
 
-  printf("The 3-Tuple representation of the matrix is:\n");
+  arr[2]=value;
+  
 
-  for(i=0;i<row;i++)
-  for(j=0;j<columns;j++)
-  {
-    if(a[i][j]!=0)
-    printf("%d %d %d\n",(i+1),(j+1),a[i][j]);
-  }
-  return 0;
+  for(int i=0;i<6;i++)
+  printf("%d ",arr[i]);
 }
